@@ -12,5 +12,11 @@
             "name": "zyq",
             "email": "790516255@qq.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "zyq\\": "",
+            "zyq\\auth\\": "console/controllers"
+        }
+    }
 }
