@@ -1,0 +1,16 @@
+{
+    "name": "ice/auth-config",
+    "description": "auth-config",
+    "type": "library",
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "2.0.15.1",
+        "kriss/yii2-common-class": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "zyq",
+            "email": "790516255@qq.com"
+        }
+    ]
+}
