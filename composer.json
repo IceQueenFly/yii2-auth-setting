@@ -3,6 +3,7 @@
     "description": "auth-config",
     "type": "library",
     "minimum-stability": "stable",
+    "license": "MIT",
     "require": {
         "yiisoft/yii2": "2.0.15.1",
         "kriss/yii2-common-class": "^2.1"
