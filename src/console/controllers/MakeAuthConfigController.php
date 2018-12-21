@@ -44,11 +44,11 @@ class MakeAuthConfigController extends Controller
         $newConfig = require(Yii::getAlias($this->workFileNew));
         $dataConfig = ArrayHelper::merge($newConfig, $oldConfig);
         $this->getFile($dataConfig, $this->workFileOld);
-        $this->getFile($dataConfig, $this->saveFilePath, '@icequeen/console/template/do-template.php');
+        $this->getFile($dataConfig, $this->saveFilePath, '@icequeen/auth/console/template/do-template.php');
     }
 
     // 生成配置文件
-    private function getFile($constArr, $fileName, $template = "@icequeen/console/template/template.php")
+    private function getFile($constArr, $fileName, $template = "@icequeen/auth/console/template/template.php")
     {
         $fileName = Yii::getAlias($fileName);
         $file = new CodeFile($fileName, $this->renderFile(Yii::getAlias($template), [
