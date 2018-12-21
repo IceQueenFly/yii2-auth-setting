@@ -158,7 +158,7 @@ class MakeAuthConfigController extends Controller
         $controllerNames = $this->readAllDir(Yii::getAlias($this->readDic));
         foreach ($controllerNames as $key => $value) {
             // 获取控制器id名例如：account\AccountController，AccountController
-            $controllerNames[$key] =str_replace('.php', '', str_replace(Yii::getAlias('@store/controllers') . '\\', '', $value)) ;
+            $controllerNames[$key] =str_replace('.php', '', str_replace(Yii::getAlias($this->readDic) . '\\', '', $value)) ;
 
         }
         return $controllerNames;
