@@ -36,7 +36,7 @@ class ModuleAuthSetController extends Controller
         $this->getFile($controllerAuthArray,$this->controllerAuthFile);
     }
 
-    private function getFile($constArr, $fileName, $template = "@zyq/console/template/controller-template.php")
+    private function getFile($constArr, $fileName, $template = "@icequeen/console/template/controller-template.php")
     {
         $fileName = Yii::getAlias($fileName);
         $file = new CodeFile($fileName, $this->renderFile(Yii::getAlias($template), [
