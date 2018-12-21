@@ -1,6 +1,6 @@
 <?php
 
-namespace icequeen\auth\console\controllers;
+namespace icequeen\console\controllers;
 
 use kriss\modules\auth\components\CodeFile;
 use Yii;
